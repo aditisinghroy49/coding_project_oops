@@ -55,10 +55,7 @@ class Concept5{ //friend class
 	private:
 		void display(){
 			cout<<"A friend class can access private and protected members of other class in which it is declared as friend.\n";
-			cout<<"We can declare a class friend of another class in this way:-\n\n";
-			cout<<"class A{\n private:\n some data\n friend class B\n}\n\n";
-		}
-		
+			}
 		friend class friend_of_data5;
 };
 class friend_of_data5{
@@ -267,7 +264,7 @@ class third_derived: public third_base{
 		~third_derived(){
 			cout<<"Deleting a derived class object using a pointer of base class type that has a non-virtual destructor results in undefined behavior.\n";
 			cout<<"To correct this situation, the base class should be defined with a virtual destructor.\n";
-			cout<<"Making base class destructor virtual guarantees that the object of derived class is destructed properly, i.e., both base class and derived class destructors are called.\n";
+			cout<<"Making base class destructor virtual guarantees that the object of derived class is destructed properly\n";
 			cout<<"virtual ~ class_name(parameters)\n\n";
 		}
 };
@@ -323,7 +320,7 @@ void file_handling(){    //file handling
 int main(){
 	int choice, data;
 	do{
-		cout<<"1.Classes and Objects\n";
+		cout<<"1.Class and Object\n";
 		cout<<"2.Static Members and Static Functions\n";
 		cout<<"3.Access Specifiers\n";
 		cout<<"4.Friend functions\n";
@@ -336,7 +333,7 @@ int main(){
 		cout<<"11.Inheritence\n";
 		cout<<"12.Types of Inheritence\n";
 		cout<<"13.Scope resolution operator\n";
-		cout<<"14.Polymorphism and it's types\n";
+		cout<<"14.Polymorphism \n";
 		cout<<"15.Operator Overloading\n";
 		cout<<"16.Virtual Function\n";
 		cout<<"17.Pure Virtual Function and Abstract Class\n";
